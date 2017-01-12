@@ -1,8 +1,4 @@
-
-# coding: utf-8
-
-# In[1]:
-
+import itertools
 import feedparser
 import PIL
 from PIL import Image
@@ -15,8 +11,7 @@ import sys
 import numpy as np
 import re
 import time
-
-
+import select
 
 
 def alpha_composite(front, back):
@@ -62,18 +57,10 @@ def alpha_composite_with_color(image, color=(255, 255, 255)):
     return alpha_composite(image.convert("RGBA"), back).convert("RGB")
 
 
-# In[2]:
-
-feedparser.parse("http://feeds.reuters.com/reuters/topNews")
-
-
-# In[3]:
 
 ts = Image.open("/home/pi/two-sigma.png")
 ts.resize([16, 16], Image.LANCZOS)
 
-
-# In[4]:
 
 PREFIX = '/home/pi/emojis/'
 HEIGHT = 16
@@ -81,13 +68,29 @@ FONTSIZE = 15
 
 tsfn = '/home/pi/two-sigma.png'
 
+#magic from http://stackoverflow.com/questions/6116978/python-replace-multiple-strings
+emoji_res = {}
+for cheat, uni in itertools.chain(emoji.unicode_codes.EMOJI_UNICODE.items(), emoji.unicode_codes.EMOJI_ALIAS_UNICODE.items()):
+    try:
+        emoji_res[re.compile(re.escape(cheat), re.IGNORECASE)] = uni
+    except:
+        print("broken as fuck", cheat, uni)
+        raise
+    try:
+        emoji_res[re.compile("\\b"+re.escape(cheat.replace(":", "")).replace("-_", "[-_ ]")+"\\b", re.IGNORECASE)] = uni
+    except:
+        print("fancy shit broke", cheat, uni)
+        raise
+#emoji_re = re.compile("|".join(emoji_res.keys()), re.IGNORECASE)
+#emoji_res = {re.compile(pattern, re.IGNORECASE): sub for pattern, sub in emoji_res.items()}
 
 emojire = re.compile(r"""\\\\[Uu]0*([0-9a-f]{4,6})""")
-
-
-happy = "happy TwoSigma aversary 🎅 🍾 ⏰ 👨‍👨‍👦‍👦 🌮 👼🏿 amigo"
+tsre = re.compile(r"""Two ?Sigma(?: Investments| Advisors| Securities)?(?: LP| LLC)?""", re.IGNORECASE)
 
 def generate_image(input_str):
+    input_str = tsre.sub("TwoSigma", input_str)
+    for pattern, replacement in emoji_res.items():
+        input_str = pattern.sub(replacement, input_str)
     input_str = input_str.split()
     im = Image.new('RGB', (1024,16))
     draw = ImageDraw.Draw(im)
@@ -125,33 +128,28 @@ def generate_image(input_str):
     im = im.crop((0,0,offset,HEIGHT))
     return im
 
-print("importing")
+
 sys.path.append("/home/pi/rpi-rgb-led-matrix/python/")
 from rgbmatrix import RGBMatrix
-
-print("imported")
-matrix = RGBMatrix(16, 2, 1)
+matrix = RGBMatrix(16, 3, 1)
 matrix.pwmBits = 11
-matrix.brightness = 25
-
-print("initialized")
+matrix.brightness = 50
 double_buffer = matrix.CreateFrameCanvas()
 
 
-print("let's scroll")
-# let's scroll
-xpos = 0
-
+happy = "happy wave TwoSigma aversary 🎅 🍾 ⏰ 👨‍👨‍👦‍👦 🌮 👼🏿 amigo"
 im = generate_image(happy)
 img_width, img_height = im.size
-import select
 
+xpos = 0
 while True:
     xpos += 3
     if (xpos > img_width):
         xpos = 0 
     if select.select([sys.stdin,],[],[],0.0)[0]:
-        im = generate_image(sys.stdin.readline())
+        txt = sys.stdin.readline()
+        txt = emoji.emojize(txt, use_aliases=True)
+        im = generate_image(txt)
         img_width, img_height = im.size
         xpos = 0
 
