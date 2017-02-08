@@ -1,0 +1,12 @@
+{
+    "panels": 6,
+    "height": 16,
+    "brightness" : 50,
+    "feeds": [
+        "http://feeds.reuters.com/reuters/topNews",
+        "http://feeds.reuters.com/reuters/technologyNews",
+        "http://feeds.reuters.com/reuters/scienceNews",
+        "http://feeds.reuters.com/news/wealth",
+        "http://feeds.reuters.com/reuters/businessNews"
+    ]
+}
