@@ -82,8 +82,7 @@ class LedText:
             if cheat.startswith(":flag_for_"):
                 cheat = cheat.replace(":", "").replace("flag_for_", "")
                 self.emoji_res[re.compile("\\b"+cheat.replace("-", "[-_ ]").replace("_", "[-_ ]")+"\\b", re.IGNORECASE)] = uni
-        print(self.emoji_res)
-        self.emojire = re.compile(r"""\\\\[Uu]0*([0-9a-f]{3,7})""")
+        self.codepointre = re.compile(r"""\\\\[Uu]0*([0-9a-f]{3,7})""")
 
     def generate_image(self, input_str, emoji_replace=True):
         if emoji_replace:
@@ -92,19 +91,19 @@ class LedText:
             #input_str = emoji.emojize(input_str, use_aliases=True)
             for pattern, replacement in self.emoji_res.items():
                 input_str = pattern.sub(replacement, input_str)
-        im = Image.new('RGB', (self.width*10, self.height))
+        im = Image.new('RGB', (self.width*100, self.height))
         draw = ImageDraw.Draw(im)
         offset = 0
         last = None
         input_list = re.findall(r"\w+|\W+", input_str)
         print(input_list)
         for text in input_list:
-            if emoji_replace and text == 'TwoSigma':
+            if emoji_replace and 'TwoSigma' in text:
                 im.paste(self.tspng, (offset, 0))
                 offset += self.height
                 last = 'logo'
-            elif emoji_replace and any(text.startswith(x) for x in emoji.UNICODE_EMOJI.keys()):
-                codepoints = self.emojire.findall(str(text.encode("unicode_escape")))
+            elif emoji_replace and any(x in text for x in emoji.UNICODE_EMOJI.keys()):
+                codepoints = self.codepointre.findall(str(text.encode("unicode_escape")))
                 codepoints = [x for x in codepoints if x != '200d']
                 try:
                     fn = os.path.join(self.emojis_path, "-".join(codepoints) + '.png')

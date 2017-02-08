@@ -6,11 +6,13 @@ import re
 import time
 import select
 import json
+import random
+import time
 
 sys.path.append("/home/pi/rpi-rgb-led-matrix/python/")
 from rgbmatrix import RGBMatrix
 from ledtxt import LedText
-
+refreshRate = 60*5   # 5 minutes from now
 
 
 config = json.load(open('config.json'))
@@ -23,25 +25,37 @@ matrix.brightness = config['brightness']
 double_buffer = matrix.CreateFrameCanvas()
 
 
-happy = "Alarm Clock"
-im = ledtext.generate_image(happy)
+txt = "STANDBY Alarm Clock"
+im = ledtext.generate_image(txt)
 img_width, img_height = im.size
+xpos=-config['panels']*32
 
-xpos = 0
 while True:
-    xpos += 3
-    if (xpos > img_width):
-        xpos = 0 
-    if select.select([sys.stdin,],[],[],0.0)[0]:
-        txt = sys.stdin.readline()
-        im = ledtext.generate_image(txt)
-        img_width, img_height = im.size
+    stories = []
+    for feed in config['feeds']:
+        stories.extend(feedparser.parse(feed).entries)
+    lastUpdate = time.time()
+
+    #keep doing new stories until 
+    while time.time() - lastUpdate < refreshRate:
+        try:
+            nxttxt = random.choice(stories).title
+            nxtim = ledtext.generate_image(nxttxt + "  TwoSigma  ")
+            nxtimg_width, nxtimg_height = nxtim.size
+        except:
+            continue
+        while True:
+            xpos += 3
+            if (xpos > img_width):
+                break
+
+            double_buffer.SetImage(im, -xpos)
+            double_buffer.SetImage(nxtim, -xpos + img_width)
+
+            double_buffer = matrix.SwapOnVSync(double_buffer)
+            time.sleep(0.15)
         xpos = 0
-
-    double_buffer.SetImage(im, -xpos)
-    double_buffer.SetImage(im, -xpos + img_width)
-
-    double_buffer = matrix.SwapOnVSync(double_buffer)
-    time.sleep(0.5)
+        im = nxtim
+        img_width = nxtimg_width
 
 
