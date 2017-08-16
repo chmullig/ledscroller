@@ -1,9 +1,10 @@
 {
-    "panels": 3,
-    "height": 16,
+    "panels": 8,
+    "chains": 2,
+    "panelheight": 16,
+    "panelwidth": 32,
     "brightness" : 50,
     "feeds": [
-        "http://feeds.reuters.com/reuters/topNews",
         "http://feeds.reuters.com/reuters/technologyNews",
         "http://feeds.reuters.com/reuters/scienceNews",
         "http://feeds.reuters.com/news/wealth",

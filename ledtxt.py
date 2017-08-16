@@ -112,12 +112,12 @@ class LedText:
                     fn = os.path.join(self.emojis_path, codepoints[0] + '.png')
                     emojipng = Image.open(fn)
                 emojipng = alpha_composite_with_color(emojipng, (0,0,0))
-                emojipng = emojipng.resize((self.height, self.height), PIL.Image.LANCZOS)
+                if emojipng.size[0] > self.height:
+                    emojipng = emojipng.resize((self.height, self.height), PIL.Image.LANCZOS)
                 im.paste(emojipng, (offset, 0))
                 offset += self.height
                 last = 'emoji'
             else:
-                print("Ok, about to write...\"" + text + "\"")
                 draw.text((offset, 0), text, (255,255,255), font=self.font)
                 offset += draw.textsize(text, font=self.font)[0]
         im = im.crop((0,0,max(offset, self.width), self.height))
