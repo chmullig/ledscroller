@@ -84,6 +84,8 @@ class LedText:
                 self.emoji_res[re.compile("\\b"+cheat.replace("-", "[-_ ]").replace("_", "[-_ ]")+"\\b", re.IGNORECASE)] = uni
         self.codepointre = re.compile(r"""\\\\[Uu]0*([0-9a-f]{3,7})""")
 
+
+
     def generate_image(self, input_str, emoji_replace=True):
         if emoji_replace:
             input_str = self.tsre.sub("TwoSigma", input_str)
@@ -95,28 +97,36 @@ class LedText:
         draw = ImageDraw.Draw(im)
         offset = 0
         last = None
-        input_list = re.findall(r"\w+|\W+", input_str)
+        input_list = re.findall(r"\w+|\W+?", input_str)
         print(input_list)
         for text in input_list:
             if emoji_replace and 'TwoSigma' in text:
                 im.paste(self.tspng, (offset, 0))
                 offset += self.height
-                last = 'logo'
             elif emoji_replace and any(x in text for x in emoji.UNICODE_EMOJI.keys()):
                 codepoints = self.codepointre.findall(str(text.encode("unicode_escape")))
+                #print("codepoints...", codepoints)
                 codepoints = [x for x in codepoints if x != '200d']
-                try:
-                    fn = os.path.join(self.emojis_path, "-".join(codepoints) + '.png')
-                    emojipng = Image.open(fn)
-                except FileNotFoundError:
-                    fn = os.path.join(self.emojis_path, codepoints[0] + '.png')
-                    emojipng = Image.open(fn)
-                emojipng = alpha_composite_with_color(emojipng, (0,0,0))
-                if emojipng.size[0] > self.height:
-                    emojipng = emojipng.resize((self.height, self.height), PIL.Image.LANCZOS)
-                im.paste(emojipng, (offset, 0))
-                offset += self.height
-                last = 'emoji'
+                start = 0
+                while start < len(codepoints):
+                    #print("starting...", start)
+                    for j in range(len(codepoints[start:])+1):
+                        codepoint_chunk = codepoints[start:len(codepoints)+1-j]
+                        #print("start {}, j {}, end {}, chunk {}".format(start, j, len(codepoints)-j+1, codepoint_chunk))
+                        try:
+                            fn = os.path.join(self.emojis_path, "-".join(codepoint_chunk) + '.png')
+                            emojipng = Image.open(fn)
+                            emojipng = alpha_composite_with_color(emojipng, (0,0,0))
+                            if emojipng.size[0] > self.height:
+                                emojipng = emojipng.resize((self.height, self.height), PIL.Image.LANCZOS)
+                            offset += draw.textsize(" ", font=self.font)[0]
+                            im.paste(emojipng, (offset, 0))
+                            offset += self.height
+                            start += len(codepoints[start:])-j 
+                        except FileNotFoundError:
+                            pass
+                    start += 1
+                offset += draw.textsize(" ", font=self.font)[0]
             else:
                 draw.text((offset, 0), text, (255,255,255), font=self.font)
                 offset += draw.textsize(text, font=self.font)[0]

@@ -4,6 +4,7 @@
     "panelheight": 16,
     "panelwidth": 32,
     "brightness" : 50,
+    "maxStories" : 100,
     "feeds": [
         "http://feeds.reuters.com/reuters/technologyNews",
         "http://feeds.reuters.com/reuters/scienceNews",
