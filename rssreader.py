@@ -19,7 +19,8 @@ refreshRate = 60*5   # 5 minutes from now
 
 config = json.load(open('config.json'))
 
-ledtext = LedText(config['panelheight']*config['chains'], config['panelwidth']*config['panels'], '/home/pi/emojis', '/home/pi/two-sigma.png', "/home/pi/rpi-rgb-led-matrix/fonts/10x20.pil")
+#ledtext = LedText(config['panelheight']*config['chains'], config['panelwidth']*config['panels'], '/home/pi/emojis', '/home/pi/two-sigma.png', "/home/pi/rpi-rgb-led-matrix/fonts/10x20.pil")
+ledtext = LedText(config['panelheight']*config['chains'], config['panelwidth']*config['panels'], '/home/pi/emojis', '/home/pi/two-sigma.png', "/home/pi/ledscroller/fonts/MTA.ttf")
 
 matrix = RGBMatrix(config['panelheight'], config['panels'], config['chains'])
 matrix.pwmBits = 11
@@ -36,7 +37,7 @@ except:
     pass
 
 print(txt)
-im = ledtext.generate_image(txt)
+im = ledtext.generate_image(txt, pad_top=6)
 img_width, img_height = im.size
 xpos=0
 double_buffer.SetImage(im, -xpos)
@@ -72,7 +73,7 @@ class ImageMaker(threading.Thread):
                 selection = random.choice(tuple(stories))
                 storiesLock.release()
                 nxttxt = selection.title
-                nxtim = ledtext.generate_image(nxttxt + "  TwoSigma  ")
+                nxtim = ledtext.generate_image(nxttxt + "  TwoSigma  ", pad_top=6)
                 print("trying to put an image")
                 images.put(nxtim)
                 print("image put")

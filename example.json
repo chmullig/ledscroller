@@ -1,0 +1,1102 @@
+{
+  "1": {
+    "arrivals": [
+      {
+        "stopId": "135S",
+        "scheduledArrivalTime": 1510181910000,
+        "projectedArrivalTime": 1510182019000,
+        "headsign": "SOUTH FERRY",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "135S",
+        "scheduledArrivalTime": 1510182150000,
+        "projectedArrivalTime": 1510182229000,
+        "headsign": "SOUTH FERRY",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "135S",
+        "scheduledArrivalTime": 1510182330000,
+        "projectedArrivalTime": 1510182482000,
+        "headsign": "SOUTH FERRY",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "135S",
+        "scheduledArrivalTime": 1510182600000,
+        "projectedArrivalTime": 1510182793000,
+        "headsign": "SOUTH FERRY",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "135S",
+        "scheduledArrivalTime": 1510182870000,
+        "projectedArrivalTime": 1510182952000,
+        "headsign": "SOUTH FERRY",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "135S",
+        "scheduledArrivalTime": 1510183140000,
+        "projectedArrivalTime": 1510183110000,
+        "headsign": "SOUTH FERRY",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "135S",
+        "scheduledArrivalTime": 1510183410000,
+        "projectedArrivalTime": 1510183423000,
+        "headsign": "SOUTH FERRY",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "135S",
+        "scheduledArrivalTime": 1510183680000,
+        "projectedArrivalTime": 1510183690000,
+        "headsign": "SOUTH FERRY",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "135S",
+        "scheduledArrivalTime": 1510183950000,
+        "projectedArrivalTime": 1510184043000,
+        "headsign": "SOUTH FERRY",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "135N",
+        "scheduledArrivalTime": 1510181880000,
+        "projectedArrivalTime": 1510181756000,
+        "headsign": "VAN CORTLANDT PARK - 242 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "135S",
+        "scheduledArrivalTime": 1510184250000,
+        "projectedArrivalTime": 1510184252000,
+        "headsign": "SOUTH FERRY",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "135N",
+        "scheduledArrivalTime": 1510182090000,
+        "projectedArrivalTime": 1510181876000,
+        "headsign": "VAN CORTLANDT PARK - 242 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "135S",
+        "scheduledArrivalTime": 1510184550000,
+        "projectedArrivalTime": 1510184550000,
+        "headsign": "SOUTH FERRY",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "135N",
+        "scheduledArrivalTime": 1510182300000,
+        "projectedArrivalTime": 1510182240000,
+        "headsign": "VAN CORTLANDT PARK - 242 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "135S",
+        "scheduledArrivalTime": 1510184850000,
+        "projectedArrivalTime": 1510184850000,
+        "headsign": "SOUTH FERRY",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "135N",
+        "scheduledArrivalTime": 1510182510000,
+        "projectedArrivalTime": 1510182510000,
+        "headsign": "VAN CORTLANDT PARK - 242 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "135S",
+        "scheduledArrivalTime": 1510185090000,
+        "projectedArrivalTime": 1510185090000,
+        "headsign": "SOUTH FERRY",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "135N",
+        "scheduledArrivalTime": 1510182720000,
+        "projectedArrivalTime": 1510182720000,
+        "headsign": "VAN CORTLANDT PARK - 242 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "135N",
+        "scheduledArrivalTime": 1510183020000,
+        "projectedArrivalTime": 1510183020000,
+        "headsign": "VAN CORTLANDT PARK - 242 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "135N",
+        "scheduledArrivalTime": 1510183260000,
+        "projectedArrivalTime": 1510183260000,
+        "headsign": "VAN CORTLANDT PARK - 242 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "135N",
+        "scheduledArrivalTime": 1510183500000,
+        "projectedArrivalTime": 1510183500000,
+        "headsign": "VAN CORTLANDT PARK - 242 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "135N",
+        "scheduledArrivalTime": 1510183740000,
+        "projectedArrivalTime": 1510183740000,
+        "headsign": "VAN CORTLANDT PARK - 242 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "135N",
+        "scheduledArrivalTime": 1510183980000,
+        "headsign": "VAN CORTLANDT PARK - 242 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "135N",
+        "scheduledArrivalTime": 1510184220000,
+        "headsign": "VAN CORTLANDT PARK - 242 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "135N",
+        "scheduledArrivalTime": 1510184460000,
+        "headsign": "VAN CORTLANDT PARK - 242 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "135N",
+        "scheduledArrivalTime": 1510184700000,
+        "headsign": "VAN CORTLANDT PARK - 242 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "135N",
+        "scheduledArrivalTime": 1510184940000,
+        "headsign": "VAN CORTLANDT PARK - 242 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "135N",
+        "scheduledArrivalTime": 1510185180000,
+        "headsign": "VAN CORTLANDT PARK - 242 ST",
+        "direction": "northbound"
+      }
+    ],
+    "statusTimestamp": 1510181670187,
+    "realtimeTimestamp": 1510181670540,
+    "serverTimestamp": 1510181711278
+  },
+  "6": {
+    "arrivals": [
+      {
+        "stopId": "639S",
+        "scheduledArrivalTime": 1510182030000,
+        "headsign": "BROOKLYN BRIDGE - CITY HALL",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "639S",
+        "scheduledArrivalTime": 1510182420000,
+        "headsign": "BROOKLYN BRIDGE - CITY HALL",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "639S",
+        "scheduledArrivalTime": 1510181850000,
+        "headsign": "BROOKLYN BRIDGE - CITY HALL",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "639S",
+        "scheduledArrivalTime": 1510182780000,
+        "projectedArrivalTime": 1510182896000,
+        "headsign": "BROOKLYN BRIDGE - CITY HALL",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "639S",
+        "scheduledArrivalTime": 1510182240000,
+        "headsign": "BROOKLYN BRIDGE - CITY HALL",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "639S",
+        "scheduledArrivalTime": 1510182600000,
+        "projectedArrivalTime": 1510182776000,
+        "headsign": "BROOKLYN BRIDGE - CITY HALL",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "639S",
+        "scheduledArrivalTime": 1510183200000,
+        "projectedArrivalTime": 1510183309000,
+        "headsign": "BROOKLYN BRIDGE - CITY HALL",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "639S",
+        "scheduledArrivalTime": 1510182960000,
+        "projectedArrivalTime": 1510183174000,
+        "headsign": "BROOKLYN BRIDGE - CITY HALL",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "639S",
+        "scheduledArrivalTime": 1510183650000,
+        "projectedArrivalTime": 1510183639000,
+        "headsign": "BROOKLYN BRIDGE - CITY HALL",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "639S",
+        "scheduledArrivalTime": 1510183440000,
+        "projectedArrivalTime": 1510183404000,
+        "headsign": "BROOKLYN BRIDGE - CITY HALL",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "639S",
+        "scheduledArrivalTime": 1510184130000,
+        "projectedArrivalTime": 1510184242000,
+        "headsign": "BROOKLYN BRIDGE - CITY HALL",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "639S",
+        "scheduledArrivalTime": 1510183890000,
+        "projectedArrivalTime": 1510183900000,
+        "headsign": "BROOKLYN BRIDGE - CITY HALL",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "639S",
+        "scheduledArrivalTime": 1510184520000,
+        "projectedArrivalTime": 1510184765000,
+        "headsign": "BROOKLYN BRIDGE - CITY HALL",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "639S",
+        "scheduledArrivalTime": 1510184310000,
+        "projectedArrivalTime": 1510184408000,
+        "headsign": "BROOKLYN BRIDGE - CITY HALL",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "639S",
+        "scheduledArrivalTime": 1510185000000,
+        "projectedArrivalTime": 1510185000000,
+        "headsign": "BROOKLYN BRIDGE - CITY HALL",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "639S",
+        "scheduledArrivalTime": 1510184760000,
+        "projectedArrivalTime": 1510184760000,
+        "headsign": "BROOKLYN BRIDGE - CITY HALL",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "639N",
+        "scheduledArrivalTime": 1510182060000,
+        "headsign": "PARKCHESTER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "639N",
+        "scheduledArrivalTime": 1510182420000,
+        "headsign": "PARKCHESTER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "639S",
+        "scheduledArrivalTime": 1510185240000,
+        "projectedArrivalTime": 1510185240000,
+        "headsign": "BROOKLYN BRIDGE - CITY HALL",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "639N",
+        "scheduledArrivalTime": 1510182840000,
+        "headsign": "PARKCHESTER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "639N",
+        "scheduledArrivalTime": 1510183260000,
+        "headsign": "PARKCHESTER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "639N",
+        "scheduledArrivalTime": 1510183680000,
+        "headsign": "PARKCHESTER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "639N",
+        "scheduledArrivalTime": 1510184100000,
+        "headsign": "PARKCHESTER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "639N",
+        "scheduledArrivalTime": 1510184520000,
+        "headsign": "PELHAM BAY PARK",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "639N",
+        "scheduledArrivalTime": 1510185000000,
+        "headsign": "PARKCHESTER",
+        "direction": "northbound"
+      }
+    ],
+    "statusTimestamp": 1510181670187,
+    "realtimeTimestamp": 1510181670540,
+    "serverTimestamp": 1510181711764
+  },
+  "A": {
+    "arrivals": [
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510182570000,
+        "headsign": "INWOOD - 207 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510181790000,
+        "headsign": "FAR ROCKAWAY - MOTT AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510182060000,
+        "headsign": "INWOOD - 207 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510182030000,
+        "headsign": "OZONE PARK - LEFFERTS BLVD",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510182360000,
+        "headsign": "FAR ROCKAWAY - MOTT AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510182630000,
+        "headsign": "OZONE PARK - LEFFERTS BLVD",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510183950000,
+        "headsign": "INWOOD - 207 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510183050000,
+        "headsign": "INWOOD - 207 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510182990000,
+        "headsign": "FAR ROCKAWAY - MOTT AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510183380000,
+        "headsign": "OZONE PARK - LEFFERTS BLVD",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510183590000,
+        "headsign": "INWOOD - 207 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510183740000,
+        "headsign": "FAR ROCKAWAY - MOTT AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510183950000,
+        "headsign": "OZONE PARK - LEFFERTS BLVD",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510184310000,
+        "headsign": "FAR ROCKAWAY - MOTT AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510184430000,
+        "headsign": "INWOOD - 207 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510184550000,
+        "headsign": "OZONE PARK - LEFFERTS BLVD",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510184880000,
+        "headsign": "FAR ROCKAWAY - MOTT AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510184970000,
+        "headsign": "INWOOD - 207 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510185150000,
+        "headsign": "OZONE PARK - LEFFERTS BLVD",
+        "direction": "southbound"
+      }
+    ],
+    "statusTimestamp": 1510181670187,
+    "realtimeTimestamp": 1510181670540,
+    "serverTimestamp": 1510181711415
+  },
+  "C": {
+    "arrivals": [
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510182180000,
+        "headsign": "168 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510182330000,
+        "headsign": "EUCLID AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510182810000,
+        "headsign": "168 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510183050000,
+        "headsign": "EUCLID AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510183320000,
+        "headsign": "168 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510183620000,
+        "headsign": "EUCLID AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510184070000,
+        "headsign": "168 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510184220000,
+        "headsign": "EUCLID AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510184640000,
+        "headsign": "168 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510184790000,
+        "headsign": "EUCLID AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510185240000,
+        "headsign": "168 ST",
+        "direction": "northbound"
+      }
+    ],
+    "statusTimestamp": 1510181670187,
+    "realtimeTimestamp": 1510181670540,
+    "serverTimestamp": 1510181711509
+  },
+  "E": {
+    "arrivals": [
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510181820000,
+        "headsign": "WORLD TRADE CENTER",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510182180000,
+        "headsign": "WORLD TRADE CENTER",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510182510000,
+        "headsign": "WORLD TRADE CENTER",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510182870000,
+        "headsign": "WORLD TRADE CENTER",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510183230000,
+        "headsign": "WORLD TRADE CENTER",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510183470000,
+        "headsign": "WORLD TRADE CENTER",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510183830000,
+        "headsign": "WORLD TRADE CENTER",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510184070000,
+        "headsign": "WORLD TRADE CENTER",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510184430000,
+        "headsign": "WORLD TRADE CENTER",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510184670000,
+        "headsign": "WORLD TRADE CENTER",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510181940000,
+        "headsign": "JAMAICA CENTER - PARSONS/ARCHER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510185000000,
+        "headsign": "WORLD TRADE CENTER",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510182300000,
+        "headsign": "JAMAICA CENTER - PARSONS/ARCHER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34S",
+        "scheduledArrivalTime": 1510185270000,
+        "headsign": "WORLD TRADE CENTER",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510182630000,
+        "headsign": "JAMAICA CENTER - PARSONS/ARCHER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510182930000,
+        "headsign": "JAMAICA CENTER - PARSONS/ARCHER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510183200000,
+        "headsign": "JAMAICA CENTER - PARSONS/ARCHER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510183590000,
+        "headsign": "JAMAICA CENTER - PARSONS/ARCHER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510183890000,
+        "headsign": "JAMAICA CENTER - PARSONS/ARCHER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510184220000,
+        "headsign": "JAMAICA CENTER - PARSONS/ARCHER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510184520000,
+        "headsign": "JAMAICA - 179 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510184790000,
+        "headsign": "JAMAICA CENTER - PARSONS/ARCHER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "A34N",
+        "scheduledArrivalTime": 1510185090000,
+        "headsign": "JAMAICA CENTER - PARSONS/ARCHER",
+        "direction": "northbound"
+      }
+    ],
+    "statusTimestamp": 1510181670187,
+    "realtimeTimestamp": 1510181670540,
+    "serverTimestamp": 1510181711615
+  },
+  "J": {
+    "arrivals": [
+      {
+        "stopId": "M20S",
+        "scheduledArrivalTime": 1510181760000,
+        "headsign": "BROAD ST",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "M20S",
+        "scheduledArrivalTime": 1510182360000,
+        "headsign": "BROAD ST",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "M20S",
+        "scheduledArrivalTime": 1510182810000,
+        "headsign": "BROAD ST",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "M20S",
+        "scheduledArrivalTime": 1510183410000,
+        "headsign": "BROAD ST",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "M20S",
+        "scheduledArrivalTime": 1510184070000,
+        "headsign": "BROAD ST",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "M20N",
+        "scheduledArrivalTime": 1510181820000,
+        "headsign": "JAMAICA CENTER - PARSONS/ARCHER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "M20S",
+        "scheduledArrivalTime": 1510184670000,
+        "headsign": "BROAD ST",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "M20N",
+        "scheduledArrivalTime": 1510182330000,
+        "headsign": "JAMAICA CENTER - PARSONS/ARCHER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "M20N",
+        "scheduledArrivalTime": 1510182930000,
+        "headsign": "JAMAICA CENTER - PARSONS/ARCHER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "M20N",
+        "scheduledArrivalTime": 1510183530000,
+        "headsign": "JAMAICA CENTER - PARSONS/ARCHER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "M20N",
+        "scheduledArrivalTime": 1510184130000,
+        "headsign": "JAMAICA CENTER - PARSONS/ARCHER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "M20N",
+        "scheduledArrivalTime": 1510184700000,
+        "headsign": "JAMAICA CENTER - PARSONS/ARCHER",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "M20N",
+        "scheduledArrivalTime": 1510185300000,
+        "headsign": "JAMAICA CENTER - PARSONS/ARCHER",
+        "direction": "northbound"
+      }
+    ],
+    "statusTimestamp": 1510181670187,
+    "realtimeTimestamp": 1510181670540,
+    "serverTimestamp": 1510181711857
+  },
+  "N": {
+    "arrivals": [
+      {
+        "stopId": "Q01N",
+        "scheduledArrivalTime": 1510182150000,
+        "headsign": "ASTORIA - DITMARS BLVD",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "Q01S",
+        "scheduledArrivalTime": 1510181730000,
+        "headsign": "CONEY ISLAND - STILLWELL AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "Q01S",
+        "scheduledArrivalTime": 1510182240000,
+        "headsign": "CONEY ISLAND - STILLWELL AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "Q01N",
+        "scheduledArrivalTime": 1510182750000,
+        "headsign": "ASTORIA - DITMARS BLVD",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "Q01N",
+        "scheduledArrivalTime": 1510183470000,
+        "headsign": "ASTORIA - DITMARS BLVD",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "Q01S",
+        "scheduledArrivalTime": 1510182960000,
+        "headsign": "CONEY ISLAND - STILLWELL AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "Q01S",
+        "scheduledArrivalTime": 1510182600000,
+        "headsign": "CONEY ISLAND - STILLWELL AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "Q01S",
+        "scheduledArrivalTime": 1510183470000,
+        "headsign": "CONEY ISLAND - STILLWELL AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "Q01N",
+        "scheduledArrivalTime": 1510184070000,
+        "headsign": "ASTORIA - DITMARS BLVD",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "Q01S",
+        "scheduledArrivalTime": 1510183650000,
+        "headsign": "CONEY ISLAND - STILLWELL AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "Q01S",
+        "scheduledArrivalTime": 1510184190000,
+        "headsign": "CONEY ISLAND - STILLWELL AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "Q01N",
+        "scheduledArrivalTime": 1510184730000,
+        "headsign": "ASTORIA - DITMARS BLVD",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "Q01S",
+        "scheduledArrivalTime": 1510184640000,
+        "headsign": "CONEY ISLAND - STILLWELL AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "Q01S",
+        "scheduledArrivalTime": 1510185240000,
+        "headsign": "CONEY ISLAND - STILLWELL AV",
+        "direction": "southbound"
+      }
+    ],
+    "statusTimestamp": 1510181670187,
+    "realtimeTimestamp": 1510181670540,
+    "serverTimestamp": 1510181711959
+  },
+  "Q": {
+    "arrivals": [
+      {
+        "stopId": "Q01N",
+        "scheduledArrivalTime": 1510181730000,
+        "headsign": "96 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "Q01N",
+        "scheduledArrivalTime": 1510182060000,
+        "headsign": "96 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "Q01N",
+        "scheduledArrivalTime": 1510182450000,
+        "headsign": "96 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "Q01N",
+        "scheduledArrivalTime": 1510182870000,
+        "headsign": "96 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "Q01S",
+        "scheduledArrivalTime": 1510181880000,
+        "headsign": "CONEY ISLAND - STILLWELL AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "Q01N",
+        "scheduledArrivalTime": 1510183350000,
+        "headsign": "96 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "Q01S",
+        "scheduledArrivalTime": 1510182330000,
+        "headsign": "CONEY ISLAND - STILLWELL AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "Q01N",
+        "scheduledArrivalTime": 1510183860000,
+        "headsign": "96 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "Q01S",
+        "scheduledArrivalTime": 1510182720000,
+        "headsign": "CONEY ISLAND - STILLWELL AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "Q01S",
+        "scheduledArrivalTime": 1510183080000,
+        "headsign": "CONEY ISLAND - STILLWELL AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "Q01N",
+        "scheduledArrivalTime": 1510184430000,
+        "headsign": "96 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "Q01S",
+        "scheduledArrivalTime": 1510183380000,
+        "headsign": "CONEY ISLAND - STILLWELL AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "Q01N",
+        "scheduledArrivalTime": 1510184820000,
+        "headsign": "96 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "Q01S",
+        "scheduledArrivalTime": 1510183770000,
+        "headsign": "CONEY ISLAND - STILLWELL AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "Q01N",
+        "scheduledArrivalTime": 1510185300000,
+        "headsign": "96 ST",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "Q01S",
+        "scheduledArrivalTime": 1510184070000,
+        "headsign": "CONEY ISLAND - STILLWELL AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "Q01S",
+        "scheduledArrivalTime": 1510184430000,
+        "headsign": "CONEY ISLAND - STILLWELL AV",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "Q01S",
+        "scheduledArrivalTime": 1510184850000,
+        "headsign": "CONEY ISLAND - STILLWELL AV",
+        "direction": "southbound"
+      }
+    ],
+    "statusTimestamp": 1510181670187,
+    "realtimeTimestamp": 1510181670540,
+    "serverTimestamp": 1510181712072
+  },
+  "R": {
+    "arrivals": [
+      {
+        "stopId": "R23S",
+        "scheduledArrivalTime": 1510181940000,
+        "headsign": "BAY RIDGE - 95 ST",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "R23N",
+        "scheduledArrivalTime": 1510182000000,
+        "headsign": "FOREST HILLS - 71 AV",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "R23S",
+        "scheduledArrivalTime": 1510182240000,
+        "headsign": "BAY RIDGE - 95 ST",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "R23S",
+        "scheduledArrivalTime": 1510182570000,
+        "headsign": "BAY RIDGE - 95 ST",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "R23N",
+        "scheduledArrivalTime": 1510182510000,
+        "headsign": "FOREST HILLS - 71 AV",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "R23S",
+        "scheduledArrivalTime": 1510183020000,
+        "headsign": "BAY RIDGE - 95 ST",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "R23N",
+        "scheduledArrivalTime": 1510182990000,
+        "headsign": "FOREST HILLS - 71 AV",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "R23S",
+        "scheduledArrivalTime": 1510183680000,
+        "headsign": "BAY RIDGE - 95 ST",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "R23N",
+        "scheduledArrivalTime": 1510183470000,
+        "headsign": "FOREST HILLS - 71 AV",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "R23N",
+        "scheduledArrivalTime": 1510184040000,
+        "headsign": "FOREST HILLS - 71 AV",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "R23S",
+        "scheduledArrivalTime": 1510184220000,
+        "headsign": "BAY RIDGE - 95 ST",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "R23N",
+        "scheduledArrivalTime": 1510184310000,
+        "headsign": "FOREST HILLS - 71 AV",
+        "direction": "northbound"
+      },
+      {
+        "stopId": "R23S",
+        "scheduledArrivalTime": 1510184460000,
+        "headsign": "BAY RIDGE - 95 ST",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "R23S",
+        "scheduledArrivalTime": 1510184910000,
+        "headsign": "BAY RIDGE - 95 ST",
+        "direction": "southbound"
+      },
+      {
+        "stopId": "R23N",
+        "scheduledArrivalTime": 1510184880000,
+        "headsign": "FOREST HILLS - 71 AV",
+        "direction": "northbound"
+      }
+    ],
+    "statusTimestamp": 1510181670187,
+    "realtimeTimestamp": 1510181670540,
+    "serverTimestamp": 1510181712196
+  },
+  "Z": {
+    "arrivals": [],
+    "statusTimestamp": 1510181670187,
+    "realtimeTimestamp": 1510181670540,
+    "serverTimestamp": 1510181712229
+  }
+}

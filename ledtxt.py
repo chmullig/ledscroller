@@ -59,7 +59,10 @@ class LedText:
         self.width = width
         self.font_path = font_path
         #"/home/pi/rpi-rgb-led-matrix/fonts/9x"+str(FONTSIZE)+".pil"
-        self.font = ImageFont.load(font_path)
+        if font_path.endswith(".pil"):
+            self.font = ImageFont.load(font_path)
+        elif font_path.endswith(".ttf"):
+            self.font = ImageFont.truetype(font_path, 16)
 
         self.tsfn = tsfn
         self.tspng = Image.open(tsfn)
@@ -86,7 +89,7 @@ class LedText:
 
 
 
-    def generate_image(self, input_str, emoji_replace=True):
+    def generate_image(self, input_str, emoji_replace=True, pad_top=0):
         if emoji_replace:
             input_str = self.tsre.sub("TwoSigma", input_str)
             #input_str = emoji.emojize(input_str)
@@ -128,7 +131,7 @@ class LedText:
                     start += 1
                 offset += draw.textsize(" ", font=self.font)[0]
             else:
-                draw.text((offset, 0), text, (255,255,255), font=self.font)
+                draw.text((offset, pad_top), text, (255,255,255), font=self.font)
                 offset += draw.textsize(text, font=self.font)[0]
         im = im.crop((0,0,max(offset, self.width), self.height))
         return im

@@ -3,7 +3,7 @@
     "chains": 2,
     "panelheight": 16,
     "panelwidth": 32,
-    "brightness" : 50,
+    "brightness" : 30,
     "maxStories" : 100,
     "feeds": [
         "http://feeds.reuters.com/reuters/technologyNews",
