@@ -75,7 +75,7 @@ class FeedFetcher(threading.Thread):
             for line, status in statuses['results'].items():
                 for mtype in ['service change', 'delays']:
                     try:
-                        message = status[mtype]
+                        message = status[mtype].title()
                         messages[message].add(line)
                     except KeyError:
                         pass
@@ -124,7 +124,7 @@ class ImageMaker(threading.Thread):
                     eta = (atime - now) / 60
                     print(eta)
                     lineSymbol = lineSymbolLookup.get(train['line'], "(%s)" % train['line'])
-                    arrivalLine = "{line} {headsign} {eta:.6f}min".format(eta=eta, line=lineSymbol, headsign=train['headsign'])
+                    arrivalLine = "{line} {headsign} {eta:.6f}min".format(eta=eta, line=lineSymbol, headsign=train['headsign'].title())
                     nxtim = ledtext.generate_image(arrivalLine + "  TwoSigma  ", pad_top=6)
                     images.put(nxtim)
                 statusMessagesLock.release()
