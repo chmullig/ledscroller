@@ -57,7 +57,9 @@ On a current/recent mac, fetch [gemoji](https://github.com/github/gemoji/) and r
 Then transfer the public/images/emoji/unicode directory to the pi. 
 
 
-Make the code. `cd` to the rpi-rgb-led-matrix/python directory and run
+## Make the code
+
+`cd` to the rpi-rgb-led-matrix/python directory and run
 
 	make build-python PYTHON=$(which python3) CYTHON=$(which cython3)
 	sudo make install-python PYTHON=$(which python3) CYTHON=$(which cython3)
