@@ -124,7 +124,7 @@ class ImageMaker(threading.Thread):
                     eta = (atime - now) / 60
                     print(eta)
                     lineSymbol = lineSymbolLookup.get(train['line'], "(%s)" % train['line'])
-                    arrivalLine = "{line} {headsign} {eta:.6f}min".format(eta=eta, line=lineSymbol, headsign=train['headsign'].title())
+                    arrivalLine = "{line} {headsign} {eta:.2f}min".format(eta=eta, line=lineSymbol, headsign=train['headsign'].title())
                     nxtim = ledtext.generate_image(arrivalLine + "  TwoSigma  ", pad_top=6)
                     images.put(nxtim)
                 statusMessagesLock.release()
