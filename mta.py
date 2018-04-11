@@ -65,8 +65,9 @@ class FeedFetcher(threading.Thread):
             try:
                 status = requests.get("http://localhost:23432/rest/status", timeout=10)
                 arrivals = requests.get("http://localhost:23432/rest/arrivals?station=Canal%20St&line=1&line=A&line=C&line=E&line=6&line=J&line=N&line=Q&line=R&line=Z", timeout=10)
-            except requests.exceptions.Timeout:
-                time.sleep(500)
+            except (requests.exceptions.Timeout, requests.exceptions.ConnectionError):
+                print("waiting a bit due to a timeout/error")
+                time.sleep(10)
                 continue
 
             statuses = status.json()
@@ -113,8 +114,7 @@ class ImageMaker(threading.Thread):
             try:
                 statusMessagesLock.acquire()
                 for message in statusMessages:
-                    selection = random.choice(tuple(statusMessages))
-                    nxtim = ledtext.generate_image(selection + "  TwoSigma  ", pad_top=6)
+                    nxtim = ledtext.generate_image(message + " | ", pad_top=6, emoji_replace=False)
                     images.put(nxtim)
                 for _, train in trainsToShow.items():
                     atime = train.get('projectedArrivalTime', train['scheduledArrivalTime']) / 1000.0
@@ -122,10 +122,12 @@ class ImageMaker(threading.Thread):
                     now = time.time() 
                     print(now)
                     eta = (atime - now) / 60
+                    if eta < 0:
+                        continue
                     print(eta)
                     lineSymbol = lineSymbolLookup.get(train['line'], "(%s)" % train['line'])
-                    arrivalLine = "{line} {headsign} {eta:.2f}min".format(eta=eta, line=lineSymbol, headsign=train['headsign'].title())
-                    nxtim = ledtext.generate_image(arrivalLine + "  TwoSigma  ", pad_top=6)
+                    arrivalLine = "{line} {headsign} {eta:.1f}min".format(eta=eta, line=lineSymbol, headsign=train['headsign'].title())
+                    nxtim = ledtext.generate_image(arrivalLine + "  | ", pad_top=6, emoji_replace=False)
                     images.put(nxtim)
                 statusMessagesLock.release()
                 time.sleep(5)
