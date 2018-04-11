@@ -126,7 +126,7 @@ class ImageMaker(threading.Thread):
                         continue
                     print(eta)
                     lineSymbol = lineSymbolLookup.get(train['line'], "(%s)" % train['line'])
-                    arrivalLine = "{line} {headsign} {eta:.1f}min".format(eta=eta, line=lineSymbol, headsign=train['headsign'].title())
+                    arrivalLine = "{line} {headsign} {eta:.0f}min".format(eta=eta, line=lineSymbol, headsign=train['headsign'].title())
                     nxtim = ledtext.generate_image(arrivalLine + "  | ", pad_top=6, emoji_replace=False)
                     images.put(nxtim)
                 statusMessagesLock.release()
